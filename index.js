@@ -26,7 +26,7 @@ const todoList = () => {
     const toDisplayableList = (list) => {
       return list
       .map(
-        (Todo) => `${Todo.completed ? "[x]" : "[]"} ${Todo.title} ${
+        (Todo) => `${Todo.completed ? "[x]" : "[ ]"} ${Todo.title} ${
           Todo.dueDate === today ? "" : Todo.dueDate
         }`
       )
